@@ -1,48 +1,86 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
-
-<body style="display: flex; text-align: center; justify-content: center">
-  <table border="1" cellspacing="3rem 3rem" cellpadding="15">
-    <tr>
-      <td>name</td>
-      <td>id</td>
-    </tr>
-    <tr>
-      <td>Ahmed Yasser</td>
-      <td>20240061</td>
-    </tr>
-    <tr>
-      <td>Martina Ashraf</td>
-      <td>20242252</td>
-    </tr>
-
-    <tr>
-      <td>Beshoy Robert</td>
-      <td>20240123</td>
-    </tr>
-    <tr>
-      <td>Madonna Gerges</td>
-      <td>20242251</td>
-    </tr>
-
-    <tr>
-      <td>Youstina Edwar</td>
-      <td>20240670</td>
-    </tr>
-    </tr>
-
-    <tr>
-      <td>Andrew Wael</td>
-      <td>20240096</td>
-    </tr>
-  </table>
-</body>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Lab Task</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(ellipse at center, #1a0a2e, #0d0d0d);
+        font-family: system-ui, sans-serif;
+        color: #f0f0f0;
+      }
+      h1 {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        color: #e8a040;
+        letter-spacing: 0.05em;
+      }
+      table {
+        border-collapse: collapse;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      th {
+        background: #e8a040;
+        color: #1a0a2e;
+        padding: 14px 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.08em;
+      }
+      td {
+        padding: 12px 32px;
+        background: #1e1230;
+        border-bottom: 1px solid #2a1845;
+      }
+      tr:last-child td { border-bottom: none; }
+      tr:hover td { background: #2a1845; }
+    </style>
+  </head>
+  <body>
+    <h1>CI/CD Lab Task</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ahmed Yasser</td>
+          <td>20240061</td>
+        </tr>
+        <tr>
+          <td>Martina Ashraf</td>
+          <td>20242252</td>
+        </tr>
+        <tr>
+          <td>Beshoy Robert</td>
+          <td>20240123</td>
+        </tr>
+        <tr>
+          <td>Madonna Gerges</td>
+          <td>20242251</td>
+        </tr>
+        <tr>
+          <td>Youstina Edwar</td>
+          <td>20240670</td>
+        </tr>
+        <tr>
+          <td>Andrew Wael</td>
+          <td>20240096</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
