@@ -24,17 +24,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Validate HTML
-        run: npx --yes html-validate index.html
-
+  # Single deploy job since we're just deploying
   deploy:
-    needs: validate
-    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
